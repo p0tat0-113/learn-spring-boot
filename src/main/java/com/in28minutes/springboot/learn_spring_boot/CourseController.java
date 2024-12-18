@@ -20,8 +20,10 @@ public class CourseController {
     @RequestMapping("/courses")
     public List<Course> retrieveAllCourses() {
         return Arrays.asList(
-                new Course(1, "LeaenAWS", "dongwoo"),
-                new Course(1, "DevOps", "dongwoo")
+                new Course(1, "LearnAWS", "dongwoo"),
+                new Course(2, "LearnDevOps", "dongwoo"),
+                //spring boot devtools를 사용하기 떄문에 코드의 변경이 발생했을 떄 서버를 수동으로 껐다가 켤 필요가 없다.
+                new Course(3, "LearnAzure", "dongwoo")
         );
     }
 }
